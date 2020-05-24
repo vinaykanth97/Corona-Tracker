@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.19.2/apexcharts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Covid 19 Tracker</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="information">
+            <div class="infected box">
+                <h1>Infected Cases</h1>
+                <p id="infected-numbers">0</p>
+            </div>
+            <div class="recovered box">
+                <h1>Recovered Cases</h1>
+                <p id="recovered-numbers">0</p>
+            </div>
+            <div class="death box">
+                <h1>Death Cases</h1>
+                <p id="death-numbers">0</p>
+            </div>
+            <select name="country" id="country-list">
+                <option value="Global">Global</option>
+            </select>
+        </div>
+        <div class="chart-info">
+            <h1>Current condition: <span class="current-country">Global</span></h1>
+            <div id="chart"></div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.19.2/apexcharts.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
